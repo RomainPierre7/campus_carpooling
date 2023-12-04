@@ -1,0 +1,377 @@
+/* Utiliser uniquement ces couleurs */
+:root {
+  --light-color: #f2f2f2;
+  --primary-color: #93e4c1;
+  --secondary-color: #3baea0;
+  --tertiary-color: #118a7e;
+  --accent-color: #1f6f78;
+  --dark-color: #0d3c3d;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--primary-color);
+}
+
+p {
+  color: var(--dark-color);
+}
+
+#confirmation{
+  color: var(--dark-color);
+  font-family: 'Arial', sans-serif;
+  font-size: 40px;
+}
+
+.app_name {
+  color: var(--light-color);
+  font-size: 1.2em;
+}
+
+.campus {
+  color: var(--light-color);
+  font-size: 1.5em;
+}
+
+.header {
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: large;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 24px;
+  color: var(--dark-color);
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.direction {
+  color: var(--tertiary-color);
+}
+
+.role {
+  color: var(--accent-color);
+}
+
+button {
+  display: inline-block;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: var(--light-color);
+  color: var(--accent-color);
+}
+
+button:active {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.menu-dev button {
+  display: inline-block;
+  border: 1px solid orangered;
+  border-radius: 4px;
+  background-color: orangered;
+  color: var(--light-color);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.menu-dev button:hover {
+  background-color: var(--light-color);
+  color: orangered;
+}
+
+.menu-dev button:active {
+  background-color: orangered;
+  color: var(--light-color);
+}
+
+.menu-dev button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.connect_button button {
+  display: inline-block;
+  border: 1px solid var(--dark-color);
+  border-radius: 4px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 24px;
+  transition: all 0.3s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.connect_button button:hover {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+.connect_button button:active {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+}
+
+.connect_button button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.logo img {
+  max-width: 100px;
+  margin-left: 10em;
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.form label {
+  font-weight: bold;
+}
+
+.form select,
+.form input[type="text"],
+.form input[type="date"],
+.form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: var(--accent-color);
+}
+
+.trajets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trajets a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.trajet {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-color);
+}
+
+.trajet-waiting {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-color);
+  background-color: #cecece;
+}
+
+.trajet-accepted {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-color);
+  background-color: var(--primary-color);
+}
+
+.trajet-refused {
+  width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--dark-color);
+  background-color:lightcoral;
+}
+
+.trajet .info, .trajet-waiting .info, .trajet-accepted .info, .trajet-refused .info {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 200px;
+  height: 150px;
+}
+
+.stat .text {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.stat .number {
+  font-size: xxx-large;
+  color: #666;
+  text-align: center;
+}
+
+.stats a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.stats a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}
+
+.info-item {
+  margin-bottom: 5px; 
+}
+
+.passenger-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.passenger-info-container {
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color);
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.passenger-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.passenger-lastname {
+  font-size: 16px;
+}
