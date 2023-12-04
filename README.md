@@ -1,7 +1,5 @@
 # Covoiturage du Campus
 
-Le résultat de notre projet est disponible sur une page web en suivant ce [lien](https://rpierre002.zzz.bordeaux-inp.fr/SGBD_covoiturage).
-
 ## Auteurs
 
 * Romain PIERRE
@@ -84,7 +82,7 @@ Nos scripts sont les suivants :
 
 ## Mise en place de l'application web Apache/PHP/PostgreSQL en local
 
-Cette partie explique comment mettre en place le serveur web **Apache** et **PHP** afin de le relier à notre base de données. Ce mode d'emploi a été conçue et testé pour *Ubuntu*. L'installation du serveur local est utile à des fins de développement. La version en production de l'application web est disponible en suivant ce [lien](https://rpierre002.zzz.bordeaux-inp.fr/SGBD_covoiturage).
+Cette partie explique comment mettre en place le serveur web **Apache** et **PHP** afin de le relier à notre base de données. Ce mode d'emploi a été conçue et testé pour *Ubuntu*. L'installation du serveur local est utile à des fins de développement.
 
 ### Modifier connect_pg.php
 
@@ -146,7 +144,3 @@ Pour pousser les fichiers du répertoire src vers le serveur local (i.e. /var/ww
 chmod 755 push_server.sh
 ./push_server.sh
 ```
-
-### Accéder au site web
-
-Le serveur web local est normalement maintenant accessible en suivant ce [lien](http://covoiturage_du_campus).
