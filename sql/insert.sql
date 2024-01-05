@@ -167,20 +167,6 @@ INSERT INTO Inscriptions(ID_etudiant, ID_trajet, ID_point_arret, statut_inscript
 (22, 4, 8, TRUE),
 (18, 5, 9, TRUE),
 (7, 5, 9, TRUE);
-CREATE OR REPLACE FUNCTION inscription_trajet_futur()
-RETURNS TRIGGER AS $$
-BEGIN
-    IF (SELECT date_depart FROM Trajets WHERE ID_trajet = NEW.ID_trajet) < CURRENT_DATE THEN
-        RAISE EXCEPTION 'Impossible de s''inscrire à un trajet passé.';
-    END IF;
-    RETURN NEW;
-END;
-$$ LANGUAGE plpgsql;
-
-CREATE TRIGGER inscription_trajet_futur_trigger
-BEFORE INSERT ON Inscriptions
-FOR EACH ROW
-EXECUTE FUNCTION inscription_trajet_futur();
 
 INSERT INTO Inscriptions(ID_etudiant, ID_trajet, ID_point_arret, statut_inscription) VALUES 
 (10, 6, 10, TRUE),
